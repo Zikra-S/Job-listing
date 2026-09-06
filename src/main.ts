@@ -9,6 +9,8 @@ import shortlyLogo from "./assets/images/shortly.svg";
 import insureLogo from "./assets/images/insure.svg";
 import eyecamLogo from "./assets/images/eyecam-co.svg";
 import airFilterLogo from "./assets/images/the-air-filter-company.svg";
+import headerMobile from "./assets/images/bg-header-mobile.svg";
+import headerDesktop from "./assets/images/bg-header-desktop.svg";
 
 interface Job {
   id: number;
@@ -183,6 +185,13 @@ const filterBar = document.getElementById("filter-bar") as HTMLElement;
 const filterPills = document.getElementById("filter-pills") as HTMLElement;
 const clearBtn = document.getElementById("clear-btn") as HTMLButtonElement;
 const jobList = document.getElementById("job-list") as HTMLElement;
+const header = document.querySelector("header") as HTMLElement;
+
+header.style.backgroundImage = `url("${headerMobile}")`;
+
+if (window.innerWidth >= 768) {
+  header.style.backgroundImage = `url("${headerDesktop}")`;
+}
 
 let activeFilters: string[] = [];
 
