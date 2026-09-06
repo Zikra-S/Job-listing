@@ -171,6 +171,7 @@ const jobsData: Job[] = [
 
 const filterBar = document.getElementById("filter-bar") as HTMLElement;
 const filterPills = document.getElementById("filter-pills") as HTMLElement;
+const clearBtn = document.getElementById("clear-btn") as HTMLButtonElement;
 const jobList = document.getElementById("job-list") as HTMLElement;
 
 let activeFilters: string[] = [];
@@ -302,6 +303,12 @@ filterPills.addEventListener("click", (e) => {
     renderFilterBar();
     renderJobs();
   }
+});
+
+clearBtn.addEventListener("click", () => {
+  activeFilters = [];
+  renderFilterBar();
+  renderJobs();
 });
 
 renderFilterBar();
