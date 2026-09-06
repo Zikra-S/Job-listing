@@ -1,4 +1,14 @@
 import "./style.css";
+import photosnapLogo from "./assets/images/photosnap.svg";
+import manageLogo from "./assets/images/manage.svg";
+import accountLogo from "./assets/images/account.svg";
+import myhomeLogo from "./assets/images/myhome.svg";
+import loopStudiosLogo from "./assets/images/loop-studios.svg";
+import faceitLogo from "./assets/images/faceit.svg";
+import shortlyLogo from "./assets/images/shortly.svg";
+import insureLogo from "./assets/images/insure.svg";
+import eyecamLogo from "./assets/images/eyecam-co.svg";
+import airFilterLogo from "./assets/images/the-air-filter-company.svg";
 
 interface Job {
   id: number;
@@ -20,7 +30,7 @@ const jobsData: Job[] = [
   {
     id: 1,
     company: "Photosnap",
-    logo: "./src/assets/images/photosnap.svg",
+    logo: photosnapLogo,
     new: true,
     featured: true,
     position: "Senior Frontend Developer",
@@ -35,7 +45,7 @@ const jobsData: Job[] = [
   {
     id: 2,
     company: "Manage",
-    logo: "./src/assets/images/manage.svg",
+    logo: manageLogo,
     new: true,
     featured: true,
     position: "Fullstack Developer",
@@ -50,7 +60,7 @@ const jobsData: Job[] = [
   {
     id: 3,
     company: "Account",
-    logo: "./src/assets/images/account.svg",
+    logo: accountLogo,
     new: true,
     featured: false,
     position: "Junior Frontend Developer",
@@ -65,7 +75,7 @@ const jobsData: Job[] = [
   {
     id: 4,
     company: "MyHome",
-    logo: "./src/assets/images/myhome.svg",
+    logo: myhomeLogo,
     new: false,
     featured: false,
     position: "Junior Frontend Developer",
@@ -80,7 +90,7 @@ const jobsData: Job[] = [
   {
     id: 5,
     company: "Loop Studios",
-    logo: "./src/assets/images/loop-studios.svg",
+    logo: loopStudiosLogo,
     new: false,
     featured: false,
     position: "Software Engineer",
@@ -95,7 +105,7 @@ const jobsData: Job[] = [
   {
     id: 6,
     company: "FaceIt",
-    logo: "./src/assets/images/faceit.svg",
+    logo: faceitLogo,
     new: false,
     featured: false,
     position: "Junior Backend Developer",
@@ -110,7 +120,7 @@ const jobsData: Job[] = [
   {
     id: 7,
     company: "Shortly",
-    logo: "./src/assets/images/shortly.svg",
+    logo: shortlyLogo,
     new: false,
     featured: false,
     position: "Junior Developer",
@@ -125,7 +135,7 @@ const jobsData: Job[] = [
   {
     id: 8,
     company: "Insure",
-    logo: "./src/assets/images/insure.svg",
+    logo: insureLogo,
     new: false,
     featured: false,
     position: "Junior Frontend Developer",
@@ -140,7 +150,7 @@ const jobsData: Job[] = [
   {
     id: 9,
     company: "Eyecam Co.",
-    logo: "./src/assets/images/eyecam-co.svg",
+    logo: eyecamLogo,
     new: false,
     featured: false,
     position: "Full Stack Engineer",
@@ -155,7 +165,7 @@ const jobsData: Job[] = [
   {
     id: 10,
     company: "The Air Filter Company",
-    logo: "./src/assets/images/the-air-filter-company.svg",
+    logo: airFilterLogo,
     new: false,
     featured: false,
     position: "Front-end Dev",
